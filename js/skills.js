@@ -24,12 +24,8 @@ function AddSkillsToPage(data)
 {
     for(i = 0; i < data.length; i++)
     {
-        var module = CreateModule(data[i].Skill, data[i].IconLink, data[i].Blurb);
-        
-        
-        $('#'+data[i].Category)
-            .find('.autowide')
-            .append(module);
+        var module = CreateModule(data[i].Skill, data[i].IconLink, data[i].Blurb);        
+        $('.autowide').append(module);
         
 
     }
