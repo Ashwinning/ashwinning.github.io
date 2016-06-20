@@ -32,6 +32,7 @@ function AddSkillsToPage(data)
     
     //Add clicks to all modules
     $('.module').click(ModuleClick);
+
     
 }
 
