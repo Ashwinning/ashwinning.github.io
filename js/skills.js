@@ -24,16 +24,19 @@ function AddSkillsToPage(data)
 {
     for(i = 0; i < data.length; i++)
     {
+        var module = CreateModule(data[i].Skill, data[i].IconLink, data[i].Blurb);
+        
+        
         $('#'+data[i].Category)
             .find('.autowide')
-            .append(CreateModule(data[i].Skill, data[i].IconLink, data[i].Blurb))
-            .on( "click", 
-                {
-                    Skill: data[i].Skill,
-                    IconLink: data[i].IconLink,
-                    Blurb: data[i].Blurb
-                }, ModuleClick );
+            .append(module);
+        
+
     }
+    
+    //Add clicks to all modules
+    $('.module').click(ModuleClick);
+    
 }
 
 $( document ).ready(function() 
@@ -46,8 +49,8 @@ function ModuleClick(event)
 {
         console.log('click');
         swal({   
-            title: "<div class=\"circle\" style=\";background-image:url(\'"+event.data.IconLink+"\')\"></div> <h3>"+event.data.Skill+"</h3>",   
-            text: event.data.Blurb,   
+            title: "<div class=\"circle\" style=\";background-image:url(\'"+$(this).attr('data-bg-img')+"\')\"></div> <h3>"+$(this).attr('data-skill')+"</h3>",   
+            text: $(this).attr('data-blurb'),   
             html: true 
         });
 }
