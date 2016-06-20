@@ -48,6 +48,7 @@ function ModuleClick(event)
         swal({   
             title: "<div class=\"circle\" style=\";background-image:url(\'"+$(this).attr('data-bg-img')+"\')\"></div> <h3>"+$(this).attr('data-skill')+"</h3>",   
             text: $(this).attr('data-blurb'),   
-            html: true 
+            html: true,
+            allowOutsideClick: true
         });
 }
