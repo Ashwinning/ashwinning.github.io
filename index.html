@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/responsive-circles.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,6 +31,10 @@
     <![endif]-->
     
     <script src="js/tabletop.js"></script>
+    <script src="js/skills.js"></script>
+    
+    <script src="js/sweetalert.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     
 </head>
 
@@ -122,25 +127,21 @@
                 </div>
             </div>
             <div class="row">
-                //icons go here..
+                <div class="autowide">
                 
-                <script type="text/javascript">
-  window.onload = function() { init() };
-
-  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1QXOUoGM93i4dt5XH8QbfS7TG8A00v5b-18Few3KcqfM/pubhtml';
-
-  function init() {
-    Tabletop.init( { key: public_spreadsheet_url,
-                     callback: showInfo,
-                     simpleSheet: true } )
-  }
-
-  function showInfo(data, tabletop) {
-    alert("Successfully processed!")
-    console.log(data);
-  }
-</script>
                 
+                
+	<div class="module" id="test" data-blurb="blurrrrb..">
+        <div class="circle" style=";background-image:url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/5/000/1fc/2d2/15b78e0.jpg')">
+        </div>
+        <h3>Name</h3>
+	</div>
+                    
+                    
+                    
+                </div><!-- //Autowide -->
+        
+ 
             </div>
         </div>
     </section>
