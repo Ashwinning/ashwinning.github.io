@@ -31,6 +31,7 @@ h1 {
 {
     text-align: center;
     padding: 10px;
+    width: 200px;
 }
 
 .module:hover

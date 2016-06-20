@@ -457,3 +457,6 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+.footer-text {
+    font-size: 1.5em;
+}
