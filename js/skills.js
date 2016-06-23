@@ -26,8 +26,6 @@ function AddSkillsToPage(data)
     {
         var module = CreateModule(data[i].Skill, data[i].IconLink, data[i].Blurb);        
         $('.autowide').append(module);
-        
-
     }
     
     //Add clicks to all modules
