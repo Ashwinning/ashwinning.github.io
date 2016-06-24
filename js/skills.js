@@ -4,7 +4,7 @@ function InitializeTabletop()
 {
     Tabletop.init( { key: public_spreadsheet_url,
                      callback: showInfo,
-                     simpleSheet: true } )
+                     simpleSheet: true } );
 }
 
 function showInfo(data, tabletop) 
@@ -33,12 +33,6 @@ function AddSkillsToPage(data)
 
     
 }
-
-$( document ).ready(function() 
-{
-    InitializeTabletop();
-    
-});
 
 function ModuleClick(event)
 {

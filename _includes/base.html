@@ -1,0 +1,16 @@
+<!-- _includes/base.html -->
+{% assign base = '' %}
+{% assign d = page.url | append: site.baseurl %}
+{% assign depth = d | split: '/' | size | minus: 1 %}
+{% if    depth == 1 %}{% assign base = '../' %}
+{% elsif depth == 2 %}{% assign base = '../' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+<br><br><br><br><br><br><br>
+{{d}}
+<br>
+{{base}}
+<br>
+{{page.url}}
+<br>
+{{site.baseurl}}
