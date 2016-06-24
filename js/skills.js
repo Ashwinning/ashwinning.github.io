@@ -33,13 +33,13 @@ function AddSkillsToPage(data)
 
     
 }
-
+/*
 $( document ).ready(function() 
 {
     InitializeTabletop();
     
 });
-
+*/
 function ModuleClick(event)
 {
         console.log('click');
