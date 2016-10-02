@@ -11,7 +11,7 @@ email: ash@ds.gg
 description: > # this means to ignore newlines until "baseurl:"
   Ashwin Sinha's website.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ash.ds.gg" # the base hostname & protocol for your site
+url: "http://ash.wine" # the base hostname & protocol for your site
 twitter_username: ashwinning
 github_username:  ashwinning
 
