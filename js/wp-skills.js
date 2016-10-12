@@ -44,4 +44,3 @@ function ModuleClick(event)
             allowOutsideClick: true
         });
 }
-HIGHLIGHTS BY 0
